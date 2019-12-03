@@ -1,0 +1,11 @@
+syntax = "proto3";
+package server;
+
+service ScoreServer {
+    rpc DoMark(MarkerData) returns (MarkerData) {}
+}
+
+message MarkerData {
+  string marker_input = 1;
+  string marker_output = 2;
+}

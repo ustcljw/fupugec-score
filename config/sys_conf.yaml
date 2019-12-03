@@ -1,0 +1,16 @@
+bsp_output_dir: /data/liujiawei/eilts_score/basic_score  # The output directory where the basic score model checkpoints will be written or loaded
+csp_output_dir: /data/liujiawei/eilts_score/coherence_score  # The output directory where the coherence score model checkpoints will be written or loaded
+psp_output_dir: /data/liujiawei/eilts_score/prompt_score  # The output directory where the prompt-relevant score model checkpoints will be written or loaded
+osp_output_dir: /data/liujiawei/eilts_score/overall_score  # The output directory of overall score model(xgboost)
+data_dir: /data/liujiawei/eilts_score/dataset # The input data dir for train and eval.
+bert_dir: /data/liujiawei/bert-model/uncased_L-12_H-768_A-12  # The pre-trained bert-original model dir
+bert_emb_dim: 768  # the embedding dim of bert model
+bsp_docker_port: 8500 # the port of the docker of basic score model
+csp_docker_port: 8600 # the port of the docker of coherence score model
+psp_docker_port: 8700 # the port of the docker of prompt-relevant score model
+
+rpc_config:
+  host: 47.98.204.76
+  port: 9002
+
+advanced_word_path: resources/advanced_words

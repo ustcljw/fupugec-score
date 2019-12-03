@@ -1,0 +1,16 @@
+{
+  "do_train": 1,
+  "do_eval": 0,
+  "do_predict": 1,
+  "train_batch_size": 16,
+  "eval_batch_size": 8,
+  "predict_batch_size": 8,
+  "learning_rate": 0.00005,
+  "num_train_epochs": 3.0,
+  "warmup_proportion": 0.1,
+  "save_checkpoints_step": 500,
+  "iterations_per_loop": 1000,
+  "prompt_id": 1,
+  "train_set_prob": 0.8,
+  "random_seed": 10
+}
